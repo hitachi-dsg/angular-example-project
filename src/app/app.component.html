@@ -1,8 +1,15 @@
-<h1>{{title}}</h1>
-<nav>
-  <a routerLink="/dashboard">Dashboard</a>
-  <a routerLink="/heroes">Heroes</a>
-</nav>
+<div class="jumbotron">
+  <h1 class="display-4">{{title}}</h1>
+  <p class="lead">Come and meet all my heroes!</p>
+  <hr class="my-4">
+  <nav>
+    <a class="btn btn-primary btn-lg" routerLink="/dashboard">Dashboard</a>
+    <a class="btn btn-primary btn-lg" routerLink="/heroes">Heroes</a>
+  </nav>
+</div>
+
+
+
 <router-outlet></router-outlet>
 <app-messages></app-messages>
 
