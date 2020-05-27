@@ -31,6 +31,9 @@ export class HeroSearchComponent implements OnInit {
         distinctUntilChanged(),
 
         // switch to new search observable each time the term changes
+        // switchMap() preserves the original request order
+        // while returning only the observable from the most recent HTTP method call.
+        // Results from prior calls are canceled and discarded.
         switchMap((term: string) => this.heroService.searchHeroes(term)),
       );
   }
