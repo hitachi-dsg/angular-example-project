@@ -1,17 +1,19 @@
-<div class="jumbotron">
-  <h1 class="display-4">{{title}}</h1>
-  <p class="lead">Come and meet all my heroes!</p>
-  <hr class="my-4">
-  <nav>
-    <a class="btn btn-primary btn-lg" routerLink="/dashboard">Dashboard</a>
-    <a class="btn btn-primary btn-lg" routerLink="/heroes">Heroes</a>
-  </nav>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1 class="display-4">{{title}}</h1>
+    <p class="lead">Come and meet all my heroes!</p>
+    <hr class="my-4">
+    <nav>
+      <a class="btn btn-primary btn-lg" routerLink="/dashboard">Dashboard</a>
+      &nbsp;
+      <a class="btn btn-primary btn-lg" routerLink="/heroes">Heroes</a>
+    </nav>
+  </div>
 </div>
 
-
-
 <router-outlet></router-outlet>
+
 <app-messages></app-messages>
 
 
-<!--<alert type="success">hello</alert>-->
