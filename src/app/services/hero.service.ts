@@ -3,8 +3,7 @@ import { Observable, of } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { catchError, map, tap } from 'rxjs/operators';
 
-import { Hero } from './hero';
-import { HEROES } from './mock-heroes';
+import { Hero } from '../models/hero';
 import { MessageService } from './message.service';
 
 @Injectable({
@@ -12,6 +11,8 @@ import { MessageService } from './message.service';
 })
 export class HeroService {
 
+  //Define the heroesUrl of the form :base/:collectionName with the address of the heroes resource on the server.
+  // Here base is the resource to which requests are made, and collectionName is the heroes data object in the in-memory-data-service.ts.
   private heroesUrl = 'api/heroes';  // URL to web api
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })

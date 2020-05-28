@@ -1,5 +1,5 @@
 
-<div class="container">
+<div class="container top-buffer">
   <div class="jumbotron">
     <h1 class="display-4">{{title}}</h1>
     <p class="lead">Come and meet all my heroes!</p>
@@ -12,8 +12,13 @@
   </div>
 </div>
 
-<router-outlet></router-outlet>
+<div class="container top-buffer">
+  <router-outlet></router-outlet>
+</div>
 
-<app-messages></app-messages>
+<div class="container top-buffer">
+  <app-messages></app-messages>
+</div>
+
 
 
